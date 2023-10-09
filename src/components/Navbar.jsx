@@ -1,13 +1,43 @@
+import { useState } from "react";
 import logo from "../assets/getdentallogo.svg";
 import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 
 function Navbar() {
+  const [show, setShow] = useState(false);
   return (
     <>
       <div className="mx-7 mt-5">
         <div className="flex items-center justify-between">
-          <div className="md:hidden">
+          <div
+            className="md:hidden"
+            onClick={() => {
+              setShow((current) => !current);
+            }}
+          >
             <img src={menu} alt="" className="" />
+          </div>
+          <div
+            className={`${
+              show ? "" : "hidden"
+            } absolute top-0 left-0 border w-full h-full bg-[#1E4D9B] text-white`}
+          >
+            <div className="flex justify-between mx-5 my-5">
+              <img src={logo} alt="" className="w-36" />
+              <img
+                src={close}
+                alt=""
+                className="ml-auto w-[30px] m-2 "
+                onClick={() => {
+                  setShow((current) => !current);
+                }}
+              />
+            </div>
+            <div className="flex flex-col gap-2 mx-5 text-4xl">
+              <a href="">Home</a>
+              <a href="">Services</a>
+              <a href="">Contact Us</a>
+            </div>
           </div>
           <div className="ml-5 md:ml-0">
             <img src={logo} alt="" className="w-36" />

@@ -1,11 +1,12 @@
 import Tooth from "../components/Tooth";
 import { Canvas } from "@react-three/fiber";
 import circle from "../assets/bluecircle.svg";
+import "../App.css";
 
 function Home() {
   return (
     <>
-      <div className="mx-7 mt-8 text-center">
+      <div className="mx-7 mt-8 text-center ">
         <div className="w-10/12 mx-auto">
           <h1 className="font-bold text-4xl">Lorem ipsum dolor sit</h1>
         </div>
@@ -21,15 +22,10 @@ function Home() {
         </button>
 
         <div className="mt-10 w-40 mx-auto">
-          <Canvas>
+          <Canvas id="canvas">
             <Tooth />
           </Canvas>
         </div>
-        <img
-          src={circle}
-          alt=""
-          className="hidden md:absolute left-[400px] top-0"
-        />
       </div>
     </>
   );

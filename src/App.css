@@ -1,3 +1,4 @@
 #canvas {
+  position: static !important;
   width: 200px !important;
 }
