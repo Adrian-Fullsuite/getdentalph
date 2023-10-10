@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import circle from "./assets/bluecircle.svg";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           className="hidden md:block absolute z-[-1] bottom-[0] left-[-45%]"
         />
         <AboutUs />
+        <Footer/>
       </div>
     </>
   );
