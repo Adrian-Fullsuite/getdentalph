@@ -2,9 +2,20 @@ import { useState } from "react";
 import logo from "../assets/getdentallogo.svg";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
+import { animated, useSpring } from "@react-spring/web";
 
 function Navbar() {
   const [show, setShow] = useState(false);
+
+  const spring = useSpring({
+    form: {
+      transform: show ? "translate(-100%, 0)" : "translate(0%,0)",
+    },
+    to: {
+      transform: show ? "translate(0%,0)" : "translate(-100%, 0)",
+    },
+  });
+
   return (
     <>
       <div className="mx-7 mt-5">
@@ -17,10 +28,9 @@ function Navbar() {
           >
             <img src={menu} alt="" className="" />
           </div>
-          <div
-            className={`${
-              show ? "" : "hidden"
-            } absolute top-0 left-0 border w-full h-full bg-[#1E4D9B] text-white`}
+          <animated.div
+            className={`absolute top-0 left-0 border w-full h-full bg-[#1E4D9B] text-white`}
+            style={{ ...spring }}
           >
             <div className="flex justify-between mx-5 my-5">
               <img src={logo} alt="" className="w-36" />
@@ -38,7 +48,7 @@ function Navbar() {
               <a href="">Services</a>
               <a href="">Contact Us</a>
             </div>
-          </div>
+          </animated.div>
           <div className="ml-5 md:ml-0">
             <img src={logo} alt="" className="w-36" />
           </div>

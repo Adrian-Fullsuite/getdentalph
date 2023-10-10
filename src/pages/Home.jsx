@@ -6,7 +6,7 @@ import "../App.css";
 function Home() {
   return (
     <>
-      <div className="mx-7 mt-8 text-center ">
+      <div className="mx-7 mt-8 text-center">
         <div className="w-10/12 mx-auto">
           <h1 className="font-bold text-4xl">Lorem ipsum dolor sit</h1>
         </div>
