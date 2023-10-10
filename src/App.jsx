@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import circle from "./assets/bluecircle.svg";
 import Services from "./pages/Services";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <img
           src={circle}
           alt=""
-          className="hidden md:block absolute z-[-1] bottom-[-70%] left-[-45%]"
+          className="hidden md:block absolute z-[-1] bottom-[0] left-[-45%]"
         />
+        <AboutUs />
       </div>
     </>
   );
