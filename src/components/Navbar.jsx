@@ -54,7 +54,7 @@ function Navbar() {
           <div className="ml-5 md:ml-0">
             <img src={logo} alt="" className="w-40" />
           </div>
-          <div className="hidden md:flex justify-between mr-20">
+          <div className="hidden md:flex justify-between mr-20 text-lg">
             <a href="#" className="py-1.5 px-3 group transition duration-300">
               Home
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#5D93F0]"></span>
