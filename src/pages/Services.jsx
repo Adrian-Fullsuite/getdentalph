@@ -20,11 +20,11 @@ function Services() {
   ];
   return (
     <>
-      <div id="#services" className="md:mx-36 md:py-32">
+      <div id="#services" className="md:mx-36 md:py-28">
         <div className="text-center mb-10">
-          <h6 className="text-[#3758F9] font-semibold">Services</h6>
-          <h1 className="text-3xl mb-2.5 font-semibold">What We Offer</h1>
-          <p className="w-10/12 md:w-2/5 mx-auto text-[#787878] text-sm">
+          <h6 className="text-[#3758F9] font-semibold text-lg">Services</h6>
+          <h1 className="text-4xl mb-2.5 font-bold">What We Offer</h1>
+          <p className="w-10/12 md:w-2/5 mx-auto text-[#787878] text-md">
             Lorem ipsum dolor sit amet consectetur. Arcu fringilla tortor arcu
             risus. Bibendum amet accumsan massa nisl nunc bibendum egestas
             maecenas neque.
