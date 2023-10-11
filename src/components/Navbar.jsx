@@ -52,21 +52,24 @@ function Navbar() {
             </div>
           </animated.div>
           <div className="ml-5 md:ml-0">
-            <img src={logo} alt="" className="w-36" />
+            <img src={logo} alt="" className="w-40" />
           </div>
           <div className="hidden md:flex justify-between mr-20">
-            <a href="/" className="py-1.5 px-3">
+            <a href="#" className="py-1.5 px-3 group transition duration-300">
               Home
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#5D93F0]"></span>
             </a>
-            <a href="#services" className="py-1.5 px-3">
+            <a href="#" className="py-1.5 px-3 group transition duration-300">
               Services
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#5D93F0]"></span>
             </a>
-            <a href="" className="py-1.5 px-3">
+            <a href="#" className="py-1.5 px-3 group transition duration-300">
               Contact Us
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#5D93F0]"></span>
             </a>
           </div>
-          <button className="rounded-md bg-[#5D93F0] py-2 px-5">
-            <p className="text-sm text-white">Login</p>
+          <button className="rounded-md border bg-[#5D93F0] text-sm text-white py-2 px-5 transition duration-300 hover:bg-[#FFFFFF] hover:text-[#5D93F0] hover:border-[#5D93F0]">
+            Login
           </button>
         </div>
       </div>
