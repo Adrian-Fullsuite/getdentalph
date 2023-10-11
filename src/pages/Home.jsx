@@ -20,7 +20,7 @@ function Home() {
               dui. Gravida volutpat egestas risus dolor elit elit consectetur
             </p>
           </div>
-          <button className="mt-2 rounded-md border border-[#5D93F0] py-2 px-3.5 text-[#5D93f0] text-md">
+          <button className="mt-2 rounded-md border border-[#5D93F0] py-2 px-3.5 text-[#5D93f0] text-md hover:bg-[#5D93F0] transition hover:text-white duration-300">
             Book Now
           </button>
         </div>
