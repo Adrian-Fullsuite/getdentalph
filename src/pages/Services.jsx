@@ -20,7 +20,7 @@ function Services() {
   ];
   return (
     <>
-      <div id="#services" className="md:mx-36 md:py-28">
+      <div id="services" className="md:mx-36 md:py-28">
         <div className="text-center mb-10">
           <h6 className="text-[#3758F9] font-semibold text-lg">Services</h6>
           <h1 className="text-4xl mb-2.5 font-bold">What We Offer</h1>

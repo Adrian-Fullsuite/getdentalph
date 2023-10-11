@@ -4,7 +4,7 @@ import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
 import { animated, useSpring } from "@react-spring/web";
 
-function Navbar() {
+function Navbar(props) {
   const [show, setShow] = useState(false);
 
   const spring = useSpring({
@@ -48,25 +48,40 @@ function Navbar() {
             <div className="flex flex-col gap-2 mx-5 text-4xl">
               <a href="/">Home</a>
               <a href="#services">Services</a>
-              <a href="">Contact Us</a>
+              <a href="">About Us</a>
             </div>
           </animated.div>
           <div className="ml-5 md:ml-0">
             <img src={logo} alt="" className="w-40" />
           </div>
           <div className="hidden md:flex justify-between mr-20 text-lg">
-            <a href="#" className="py-1.5 px-3 group transition duration-300">
+            <button
+              onClick={() => {
+                props.scrollToMethod("home");
+              }}
+              className="py-1.5 px-3 group transition duration-300"
+            >
               Home
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#5D93F0]"></span>
-            </a>
-            <a href="#" className="py-1.5 px-3 group transition duration-300">
+            </button>
+            <button
+              onClick={() => {
+                props.scrollToMethod("services");
+              }}
+              className="py-1.5 px-3 group transition duration-300"
+            >
               Services
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#5D93F0]"></span>
-            </a>
-            <a href="#" className="py-1.5 px-3 group transition duration-300">
-              Contact Us
+            </button>
+            <button
+              onClick={() => {
+                props.scrollToMethod("aboutus");
+              }}
+              className="py-1.5 px-3 group transition duration-300"
+            >
+              About Us
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#5D93F0]"></span>
-            </a>
+            </button>
           </div>
           <button className="rounded-md border bg-[#5D93F0] text-sm text-white py-2 px-5 transition duration-300 hover:bg-[#FFFFFF] hover:text-[#5D93F0] hover:border-[#5D93F0]">
             Login
