@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Footer = () => {
   return (
  <>
@@ -78,6 +76,11 @@ consequat hendrerit pellentesque tincidunt ac. Nunc nulla.
     </div>
   </div>
 
+              <p className="text-left">emailaddress@doman.com</p>
+              <p className="text-left">+63 123 123 1234</p>
+            </div>
+          </div>
+        </div>
 
   <div
     className="w-full bg-[#002c74] p-4 text-white dark:bg-neutral-700 dark:text-neutral-200">
@@ -103,4 +106,5 @@ consequat hendrerit pellentesque tincidunt ac. Nunc nulla.
   )
 }
 
-export default Footer
+
+export default Footer;
