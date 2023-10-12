@@ -9,10 +9,18 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [scrollTarget, setScrollTarget] = useState(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  window.addEventListener("scroll", handleScroll);
 
   useEffect(() => {
     if (scrollTarget) {
       scrollTarget.scrollIntoView({ behavior: "smooth" });
+      window.addEventListener("scroll", handleScroll);
       setScrollTarget(null); // Reset the target after scrolling
     }
   }, [scrollTarget]);
@@ -29,7 +37,8 @@ function App() {
         <img
           src={circle}
           alt=""
-          className="hidden md:block absolute top-[-10px] left-[45%] z-[-1] 2xl:left-[50%]"
+          style={{ top: -10 + scrollPosition * -1 }}
+          className="hidden md:block absolute left-[45%] z-[-1] 2xl:left-[50%]"
         />
         <Navbar scrollToMethod={handleClick} />
         <Home />
@@ -37,8 +46,15 @@ function App() {
         <img
           src={circle}
           alt=""
-          className="hidden md:block absolute z-[-1] bottom-[0] left-[-45%]"
+          style={{ bottom: 0 + scrollPosition / 1.5 }}
+          className="hidden md:block absolute z-[-1] left-[-45%]"
         />
+        {/* <img
+          src={circle}
+          alt=""
+          style={{ bottom: 0 + scrollPosition / 4 }}
+          className="hidden md:block absolute z-[-1] left-[50%]"
+        /> */}
         <AboutUs />
         <Footer />
       </div>
