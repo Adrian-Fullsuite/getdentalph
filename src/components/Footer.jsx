@@ -2,8 +2,8 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <footer className="flex flex-col items-center bg-[#1e4d9b] text-center dark:bg-neutral-600 lg:text-left">
-        <div className="mx-7 mt-8 container p-6 text-white dark:text-neutral-200">
+      <footer className="flex flex-col items-center bg-[#1e4d9b] text-centerlg:text-left">
+        <div className="mx-7 mt-8 container p-6 text-white">
           <div className="grid gap-4 lg:grid-cols-4">
             <div className="mb-6 md:mb-0">
               <h4 className="mb-2 text-left text-lg font-bold">
@@ -16,10 +16,7 @@ const Footer = () => {
                 pharetra sit orci.
               </p>
               <div className=" flex justify-left">
-                <a
-                  href="#!"
-                  className="mr-9 text-[#5d93f0] dark:text-neutral-200"
-                >
+                <a href="#!" className="mr-9 text-[#5d93f0] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-[24px] w-[24px]"
@@ -30,10 +27,7 @@ const Footer = () => {
                   </svg>
                 </a>
 
-                <a
-                  href="#!"
-                  className="mr-9 text-[#5d93f0] dark:text-neutral-200"
-                >
+                <a href="#!" className="mr-9 text-[#5d93f0] ">
                   <svg
                     className="h-[28px] w-[28px]"
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,10 +44,7 @@ const Footer = () => {
                   </svg>
                 </a>
 
-                <a
-                  href="#!"
-                  className="mr-9 text-[#5d93f0] dark:text-neutral-200"
-                >
+                <a href="#!" className="mr-9 text-[#5d93f0] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-[24px] w-[24px]"
@@ -85,7 +76,7 @@ const Footer = () => {
                   placeholder="Enter your email address"
                   id="hs-trailing-button-add-on"
                   name="hs-trailing-button-add-on"
-                  className="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                  className="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 "
                 />
                 <button
                   type="button"
@@ -107,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full bg-[#002c74] p-4 text-white dark:bg-neutral-700 dark:text-neutral-200">
+        <div className="w-full bg-[#002c74] p-4 text-white ">
           <div className="flex justify-between md:mx-5 py-2.5">
             <div className="text-sm">&copy; Copyright {year}</div>
             <div className="text-sm">
