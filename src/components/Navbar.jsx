@@ -29,10 +29,8 @@ function Navbar(props) {
             <img src={menu} alt="" className="" />
           </div>
           <animated.div
-            className={`absolute top-0 right-0 z-[${
-              show === 0 ? -10 : 1
-            }] border w-full h-full bg-[#1E4D9B] text-white`}
-            style={{ ...spring }}
+            className={`absolute top-0 right-0 border w-full h-full bg-[#1E4D9B] text-white`}
+            style={{ ...spring, zIndex: show === 0 ? -10 : 1 }}
           >
             <div className="flex justify-between mx-5 my-5">
               <img src={logo} alt="" className="w-36" />
