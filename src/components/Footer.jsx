@@ -3,35 +3,42 @@ import React from 'react'
 const Footer = () => {
   return (
  <>
- <footer
-  class="flex flex-col items-center bg-[#1e4d9b] text-center dark:bg-neutral-600 lg:text-left">
-  <div class="container p-6 text-white dark:text-neutral-200">
-    <div class="grid gap-4 lg:grid-cols-3">
-      <div class="mb-6 md:mb-0">
-        <h5 class="mb-2 font-medium ">getdentalph.com</h5>
+  <footer
+  className="flex flex-col items-center bg-[#1e4d9b] text-center dark:bg-neutral-600 lg:text-left">
+  <div className="mx-7 mt-8 container p-6 text-white dark:text-neutral-200">
+    <div className="grid gap-4 lg:grid-cols-4">
+      <div className="mb-6 md:mb-0">
+        <h4 className="mb-2 text-left font-bold">getdentalph.com</h4>
 
-        <p class="mb-4">
+        <p className="mb-4 text-[13px] text-left font-light">
         Lorem ipsum dolor sit amet consectetur. 
 Ullamcorper turpis dolor id in. Id purus vitae 
 at at ipsum hendrerit at. Non urna proin 
 pharetra sit orci.
         </p>
-        <div class="mb-8 flex justify-left">
-      <a href="#!" class="mr-9 text-[#5d93f0] dark:text-neutral-200">
+        <div className="mb-8 flex justify-left">
+      <a href="#!" className="mr-9 text-[#5d93f0] dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
+          className="h-[24px] w-[24px]"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
             d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
         </svg>
       </a>
+
+      <a href="#!" className="mr-9 text-[#5d93f0] dark:text-neutral-200">
+        <svg 
+          className="h-[28px] w-[28px]" 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"> <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /> <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+      </a>
     
-      <a href="#!" class="mr-9 text-[#5d93f0] dark:text-neutral-200">
+      <a href="#!" className="mr-9 text-[#5d93f0] dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
+          className="h-[24px] w-[24px]"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
@@ -39,60 +46,52 @@ pharetra sit orci.
         </svg>
       </a>
     
-      <a href="#!" class="mr-9 text-[#5d93f0] dark:text-neutral-200">
-        <svg 
-          class="h-4 w-4" 
-          xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /> <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
-      </a>
+     
      
     </div>
       </div>
 
-      <div class="mb-6 md:mb-0">
-        <h5 class="mb-2 font-medium uppercase">Sign Up to our Newsletter</h5>
+      <div className="lg:col-span-2 mb-6 md:mb-0">
+        <h4 className="mb-2 text-left font-bold">Sign Up to our Newsletter</h4>
 
-        <p class="mb-4">
+        <p className="mb-4 text-left text-[14px] font-light">
         Lorem ipsum dolor sit amet consectetur. 
 Nulla pretium aliquam eu nulla. Facilisi dignissim venenatis 
 consequat hendrerit pellentesque tincidunt ac. Nunc nulla.
         </p>
-        <label for="hs-trailing-button-add-on" class="sr-only">Label</label>
-  <div class="flex rounded-md shadow-sm">
-    <input type="text" placeholder="Enter your email address" id="hs-trailing-button-add-on" name="hs-trailing-button-add-on" class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"/>
-    <button type="button" class="py-3 px-4 inline-flex flex-shrink-0 justify-center items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#5d93f0] text-white hover:bg-blue-600 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm">
+        <label htmlFor="hs-trailing-button-add-on" className="sr-only">Label</label>
+  <div className="flex rounded-md w-[90%] shadow-sm">
+    <input type="text" placeholder="Enter your email address" id="hs-trailing-button-add-on" name="hs-trailing-button-add-on" className="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"/>
+    <button type="button" className="py-3 px-2 inline-flex flex-shrink-0 font-medium justify-center items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#5d93f0] text-white hover:bg-blue-600 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm">
       Register
     </button>
   </div>
       </div>
-      <div class="mb-6 md:mb-0">
-        <h5 class="mb-2 font-medium uppercase">Contact Us</h5>
+      <div className="mb-6 md:mb-0">
+        <h5 className="mb-2 text-left font-bold">Contact Us</h5>
 
-        <p class='text-left'>
-        emailaddress@doman.com
-        </p>
-        <p class='text-left'>
+        <p className='text-left text-[16] font-light'>
+        emailaddress@doman.com<br/>
         +63 123 123 1234
         </p>
-        
       </div>
     </div>
   </div>
 
 
   <div
-    class="w-full bg-[#002c74] p-4 text-white dark:bg-neutral-700 dark:text-neutral-200">
+    className="w-full bg-[#002c74] p-4 text-white dark:bg-neutral-700 dark:text-neutral-200">
      
-     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 Copyright 2023
+     <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span className="text-[10px] lg:text-[16px] font-medium text-white sm:text-center dark:text-gray-400">© 2023 Copyright 2023
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
+    <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
        
         <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            <a href="#" className="mr-4 text-[10px] lg:text-[16px] font-medium hover:underline md:mr-6">Privacy Policy</a>
         </li>
         <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6">Terms and Condition</a>
+            <a href="#" className="mr-4 text-[10px] lg:text-[16px] font-medium hover:underline md:mr-6">Terms and Condition</a>
         </li>
        
     </ul>
