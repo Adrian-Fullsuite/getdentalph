@@ -5,16 +5,14 @@ import close from "../assets/close.svg";
 import { animated, useSpring } from "@react-spring/web";
 
 function Navbar(props) {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(0);
 
   const spring = useSpring({
     form: {
-      transform: show ? "translate(-100%, 0)" : "translate(0%,0)",
-      opacity: show ? 1 : 0,
+      opacity: show,
     },
     to: {
-      transform: show ? "translate(0%,0)" : "translate(-100%, 0)",
-      opacity: show ? 1 : 0,
+      opacity: show,
     },
   });
 
@@ -25,13 +23,15 @@ function Navbar(props) {
           <div
             className="md:hidden"
             onClick={() => {
-              setShow((current) => !current);
+              setShow((current) => (current === 0 ? 1 : 0));
             }}
           >
             <img src={menu} alt="" className="" />
           </div>
           <animated.div
-            className={`absolute top-0 left-0 border w-full h-full bg-[#1E4D9B] text-white`}
+            className={`absolute top-0 right-0 z-[${
+              show === 0 ? -10 : 1
+            }] border w-full h-full bg-[#1E4D9B] text-white`}
             style={{ ...spring }}
           >
             <div className="flex justify-between mx-5 my-5">
@@ -41,28 +41,34 @@ function Navbar(props) {
                 alt=""
                 className="ml-auto w-[30px] m-2 "
                 onClick={() => {
-                  setShow((current) => !current);
+                  setShow((current) => (current === 0 ? 1 : 0));
                 }}
               />
             </div>
-            <div className="flex flex-col gap-2 mx-5 text-4xl">
+            <div className="flex flex-col gap-2 mx-5 text-4xl text-left">
               <button
+                className="text-left"
                 onClick={() => {
                   props.scrollToMethod("home");
+                  setShow(0);
                 }}
               >
                 Home
               </button>
               <button
+                className="text-left"
                 onClick={() => {
                   props.scrollToMethod("services");
+                  setShow(0);
                 }}
               >
                 Services
               </button>
               <button
+                className="text-left"
                 onClick={() => {
                   props.scrollToMethod("aboutus");
+                  setShow(0);
                 }}
               >
                 About Us

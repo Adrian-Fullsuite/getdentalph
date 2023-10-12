@@ -1,18 +1,21 @@
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <>
       <footer className="flex flex-col items-center bg-[#1e4d9b] text-center dark:bg-neutral-600 lg:text-left">
         <div className="mx-7 mt-8 container p-6 text-white dark:text-neutral-200">
           <div className="grid gap-4 lg:grid-cols-4">
             <div className="mb-6 md:mb-0">
-              <h4 className="mb-2 text-left font-bold">getdentalph.com</h4>
+              <h4 className="mb-2 text-left text-lg font-bold">
+                getdentalph.com
+              </h4>
 
               <p className="mb-4 text-[13px] text-left font-light">
                 Lorem ipsum dolor sit amet consectetur. Ullamcorper turpis dolor
                 id in. Id purus vitae at at ipsum hendrerit at. Non urna proin
                 pharetra sit orci.
               </p>
-              <div className="mb-8 flex justify-left">
+              <div className=" flex justify-left">
                 <a
                   href="#!"
                   className="mr-9 text-[#5d93f0] dark:text-neutral-200"
@@ -63,8 +66,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-2 mb-6 md:mb-0">
-              <h4 className="mb-2 text-left font-bold">
+            <div className="lg:col-span-2 mb-6 md:mb-0 md:w-3/4 md:mx-auto">
+              <h4 className="mb-2 text-left text-lg font-bold">
                 Sign Up to our Newsletter
               </h4>
 
@@ -76,7 +79,7 @@ const Footer = () => {
               <label htmlFor="hs-trailing-button-add-on" className="sr-only">
                 Label
               </label>
-              <div className="flex rounded-md w-[90%] shadow-sm">
+              <div className="flex rounded-md shadow-sm">
                 <input
                   type="text"
                   placeholder="Enter your email address"
@@ -86,14 +89,14 @@ const Footer = () => {
                 />
                 <button
                   type="button"
-                  className="py-3 px-2 inline-flex flex-shrink-0 font-medium justify-center items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#5d93f0] text-white hover:bg-blue-600 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm"
+                  className="py-3 px-2 inline-flex flex-shrink-0 justify-center items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#5d93f0] text-white hover:bg-blue-600 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm"
                 >
                   Register
                 </button>
               </div>
             </div>
             <div className="mb-6 md:mb-0">
-              <h5 className="mb-2 text-left font-bold">Contact Us</h5>
+              <h5 className="mb-2 text-left text-lg font-bold">Contact Us</h5>
 
               <p className="text-left text-[16] font-light">
                 emailaddress@doman.com
@@ -105,28 +108,12 @@ const Footer = () => {
         </div>
 
         <div className="w-full bg-[#002c74] p-4 text-white dark:bg-neutral-700 dark:text-neutral-200">
-          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-            <span className="text-[10px] lg:text-[16px] font-medium text-white sm:text-center dark:text-gray-400">
-              © 2023 Copyright 2023
-            </span>
-            <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
-              <li>
-                <a
-                  href="#"
-                  className="mr-4 text-[10px] lg:text-[16px] font-medium hover:underline md:mr-6"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="mr-4 text-[10px] lg:text-[16px] font-medium hover:underline md:mr-6"
-                >
-                  Terms and Condition
-                </a>
-              </li>
-            </ul>
+          <div className="flex justify-between md:mx-5 py-2.5">
+            <div className="text-sm">&copy; Copyright {year}</div>
+            <div className="text-sm">
+              <a href=""> Privacy Policy</a>
+              <a href=""> Terms & Condition</a>
+            </div>
           </div>
         </div>
       </footer>
