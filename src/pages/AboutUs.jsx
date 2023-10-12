@@ -3,7 +3,7 @@ import about from "../assets/about.svg";
 function AboutUs() {
   return (
     <>
-      <div id="#about" className="my-28 md:mx-36">
+      <div id="aboutus" className="my-28 md:mx-36">
         <div className="text-center mb-10">
           <h6 className="text-[#3758F9] font-semibold text-lg">About Us</h6>
           <h1 className="text-4xl font-bold">Who are we</h1>

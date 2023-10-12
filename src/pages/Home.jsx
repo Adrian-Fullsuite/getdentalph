@@ -5,7 +5,7 @@ import "../App.css";
 function Home() {
   return (
     <>
-      <div
+      <section
         id="home"
         className="mx-7 mt-10 md:mt-0 pb-10 text-center md:flex md:justify-between md:mx-36 md:pb-28 md:pt-20"
       >
@@ -32,7 +32,7 @@ function Home() {
             <Tooth />
           </Canvas>
         </div>
-      </div>
+      </section>
     </>
   );
 }
