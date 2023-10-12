@@ -46,9 +46,27 @@ function Navbar(props) {
               />
             </div>
             <div className="flex flex-col gap-2 mx-5 text-4xl">
-              <a href="/">Home</a>
-              <a href="#services">Services</a>
-              <a href="">About Us</a>
+              <button
+                onClick={() => {
+                  props.scrollToMethod("home");
+                }}
+              >
+                Home
+              </button>
+              <button
+                onClick={() => {
+                  props.scrollToMethod("services");
+                }}
+              >
+                Services
+              </button>
+              <button
+                onClick={() => {
+                  props.scrollToMethod("aboutus");
+                }}
+              >
+                About Us
+              </button>
             </div>
           </animated.div>
           <div className="ml-5 md:ml-0">
