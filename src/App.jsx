@@ -20,6 +20,7 @@ function App() {
   useEffect(() => {
     if (scrollTarget) {
       scrollTarget.scrollIntoView({ behavior: "smooth" });
+      window.addEventListener("scroll", handleScroll);
       setScrollTarget(null); // Reset the target after scrolling
     }
   }, [scrollTarget]);
@@ -45,15 +46,15 @@ function App() {
         <img
           src={circle}
           alt=""
-          style={{ bottom: 0 + scrollPosition }}
+          style={{ bottom: 0 + scrollPosition / 1.5 }}
           className="hidden md:block absolute z-[-1] left-[-45%]"
         />
-        <img
+        {/* <img
           src={circle}
           alt=""
-          style={{ bottom: -1500 + scrollPosition }}
+          style={{ bottom: 0 + scrollPosition / 4 }}
           className="hidden md:block absolute z-[-1] left-[50%]"
-        />
+        /> */}
         <AboutUs />
         <Footer />
       </div>
