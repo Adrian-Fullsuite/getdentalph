@@ -1,6 +1,8 @@
 import Tooth from "../components/Tooth";
 import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 import "../App.css";
+import { ModelPlaceHolder } from "../components/ModelPlaceHolder";
 
 function Home() {
   return (
@@ -28,9 +30,11 @@ function Home() {
         </div>
 
         <div className="m-auto">
-          <Canvas id="canvas">
-            <Tooth />
-          </Canvas>
+          <Suspense fallback={<ModelPlaceHolder />}>
+            <Canvas id="canvas">
+              <Tooth />
+            </Canvas>
+          </Suspense>
         </div>
       </section>
     </>
