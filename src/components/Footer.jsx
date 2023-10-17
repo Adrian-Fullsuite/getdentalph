@@ -11,9 +11,9 @@ const Footer = () => {
               </h4>
 
               <p className="mb-4 text-[13px] text-left font-light">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper turpis dolor
-                id in. Id purus vitae at at ipsum hendrerit at. Non urna proin
-                pharetra sit orci.
+                getdentalph is a user-friendly platform that seamlessly connects
+                individuals with trusted dentists, offering the ease of booking
+                appointments and accessing quality dental care.
               </p>
               <div className=" flex justify-left">
                 <a href="#!" className="mr-9 text-[#5d93f0] ">

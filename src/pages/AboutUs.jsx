@@ -8,29 +8,34 @@ function AboutUs() {
           <h6 className="text-[#3758F9] font-semibold text-lg">About Us</h6>
           <h1 className="text-4xl font-bold">Who are we</h1>
         </div>
-        <div className="text-center md:flex md:flex-row-reverse md:text-left">
-          <img src={about} alt="" className="w-[300px] mx-auto md:w-[700px]" />
-          <div className="lg:flex lg:flex-col lg:justify-center">
-            <h1 className="text-3xl my-3 font-bold w-9/12 mx-auto">
-              Lorem ipsum dolor sit amet
+        <div className="grid lg:grid-cols-2">
+          <img
+            src={about}
+            alt=""
+            className="w-[300px] mx-auto md:w-[700px] lg:order-last"
+          />
+          <div className="self-center text-center lg:text-left">
+            <h1 className="m-5 font-semibold text-2xl xl:text-3xl">
+              Providing flawless and seamless experience
             </h1>
-            <p className="text-lg w-9/12 mx-auto md:ml-0 lg:mx-auto">
-              Lorem ipsum dolor sit amet consectetur. Commodo eu tempor aliquet
-              ante magna ac hendrerit nunc. Lacus varius molestie mauris
-              adipiscing nisl dictum enim.
+            <p className="mx-5 text-lg">
+              At getdental, we are dedicated to delivering a seamless and
+              flawless experience when it comes to booking your dental
+              appointments.
             </p>
           </div>
         </div>
-        <div className="text-center md:flex md:text-left md:py-5">
+        <div className="grid lg:grid-cols-2">
           <img src={about} alt="" className="w-[300px] mx-auto md:w-[700px]" />
-          <div className="lg:flex lg:flex-col lg:justify-center">
-            <h1 className="text-3xl my-3 font-bold w-9/12 mx-auto">
-              Lorem ipsum dolor sit amet
+          <div className="self-center text-center lg:text-left">
+            <h1 className="m-5 font-semibold text-2xl xl:text-3xl">
+              Commited to give high quality care
             </h1>
-            <p className="text-lg w-9/12 mx-auto md:ml-0 lg:mx-auto">
-              Lorem ipsum dolor sit amet consectetur. Commodo eu tempor aliquet
-              ante magna ac hendrerit nunc. Lacus varius molestie mauris
-              adipiscing nisl dictum enim.
+            <p className="mx-5 text-lg">
+              With a commitment to excellence and a focus on delivering
+              high-quality care, you can trust that your dental health is in
+              expert hands, ensuring you receive the finest level of service
+              possible.
             </p>
           </div>
         </div>
